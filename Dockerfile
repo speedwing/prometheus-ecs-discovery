@@ -9,3 +9,4 @@ RUN apk --no-cache add ca-certificates
 WORKDIR /bin/
 COPY --from=0 /go/src/github.com/teralytics/prometheus-ecs-discovery/prometheus-ecs-discovery .
 CMD ["./prometheus-ecs-discovery"]
+ENTRYPOINT ["./prometheus-ecs-discovery"]
